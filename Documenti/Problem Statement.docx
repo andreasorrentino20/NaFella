@@ -1,1 +1,25 @@
-dk
+1.	Dominio del problema
+
+Oggigiorno si sta sviluppando sempre più la tendenza ad effettuare acquisti online secondo le esigenze delle persone. L’espressione commercio elettronico, in inglese e-commerce, si riferisce all’insieme delle transazioni per la commercializzazione di beni e servizi tra produttore e consumatore, realizzate tramite Internet; quindi all’acquisto di beni e servizi attraverso il World Wide Web ricorrendo a server sicuri, con servizi di pagamento online, come ad esempio le autorizzazioni per il pagamento con carta di credito. 
+Il problema del nostro cliente è quindi quello di voler rendere visibile la propria attività e di ampliare la sua clientela.  L’obiettivo che ci poniamo è quello di fornire una piattaforma online per l’acquisto di carni e salumi. L’e-commerce “NaFella” offre la possibilità all’utenza di visionare il catalogo di carni e di effettuare uno o più acquisti. La possibilità di acquistare uno o più carni è riservata solo agli utenti registrati. Il gestore ha invece la possibilità di inserire o rimuovere beni e mettere in offerta determinati articoli. L’obiettivo finale è quello di sviluppare un sistema efficace ed efficiente, a vantaggio del nostro cliente, e che sia fruibile all’utenza.
+
+
+
+
+Per questo ci viene in aiuto NaFella, il sistema da noi pensato.
+
+2.	Obiettivi 
+
+	Gli obiettivi del sistema NaFella sono:
+1.	Fornire un’interfaccia per ottenere informazioni relative ai singoli prodotti in vendita
+2.	Fornire un’infrastruttura che dia la possibilità all’utente di potersi registrare e usufruire del servizio di acquisto
+3.	Fornire un’interfaccia che permetta l’acquisto dei prodotti
+4.	Fornire un’interfaccia che permetta al gestore l’inserimento di informazioni relative ai prodotti che verranno poi inseriti nel catalogo
+5.	Fornire un’interfaccia che permetta al gestore di modificare i prezzi degli articoli;
+6.	Fornire un’interfaccia che permetta al gestore di manipolare il magazzino;
+7.	Permettere di ridurre file d’attesa presso il negozio
+8.	Evitare al cliente di esso esposto a assembramenti potenzialmente pericolosi
+9.	Semplicità di utilizzo anche agli utenti meno esperti
+
+
+3.	Requisiti Fun
