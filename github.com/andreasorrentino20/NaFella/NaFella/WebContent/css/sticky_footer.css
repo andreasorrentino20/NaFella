@@ -1,0 +1,30 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 2cm;
+}
+
+#margin {
+	margin-bottom: 2cm;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+ 
+  
+  background-color: #222222;
+  color:            #efe5d0;
+  text-align:       center;
+}
+
+@media screen and (max-width: 600px) {
+	
+	#margin {
+	margin-bottom: 4cm;
+	}
+}
