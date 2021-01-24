@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Context>
+    <Resource name="jdbc/nafella"
+        auth="Container"
+        driverClassName="com.mysql.jdbc.Driver"
+        type="javax.sql.DataSource"
+        username="root"
+        password="root"
+        defaultAutoCommit="false"
+        url="jdbc:mysql://localhost:3306/nafella"/>
+</Context>

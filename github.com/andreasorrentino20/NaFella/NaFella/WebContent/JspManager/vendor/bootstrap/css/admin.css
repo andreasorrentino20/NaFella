@@ -1,0 +1,16 @@
+.glyphicon-trash {
+   		color: red;
+}
+
+#track {
+	    background-color: #ddd;
+	    border: 1px solid #fff;
+	    color: red;
+}
+#accept{
+		color: red;
+}
+		
+#accepted{
+		color: green;
+}

@@ -1,0 +1,11 @@
+.pagination>li>a, .pagination>li>span { border-radius: 50% !important;margin: 0 5px;}
+
+.glyphicon-trash, .glyphicon-edit,  a:link {
+    color: black;
+}
+
+#error1, #error2, #error3, #error4, #error5,#error_up_1,#error_up_2, #error1_1,#error1_2,#error1_3,#error1_4,#error1_5 {
+	color: red;
+	font-size: medium;
+}
+
