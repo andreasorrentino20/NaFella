@@ -27,7 +27,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>All Products - NaFella Administrator</title>
+    <title>All Products - NaFella Manager</title>
 	
 	<%@ include file="../fragments/ico.html" %>
 
@@ -280,7 +280,7 @@
 }
 else
 {	
-	session.setAttribute("ErrorIndex", "You must be logged in to access the administrator area."); %>
+	session.setAttribute("ErrorIndex", "You must be logged in to access the manager area."); %>
 	<script>
 		window.location.href = "login.jsp";
 	</script>

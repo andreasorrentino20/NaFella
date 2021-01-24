@@ -24,7 +24,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Insert New Product Generate Shop Administrator</title>
+    <title>Insert New Product NaFella Manager</title>
 	
 	<%@ include file="../fragments/ico.html" %>
 	
@@ -103,7 +103,7 @@
                                             <input type="file" multiple accept="image/*" name="file" >
                                         </div>
                                         <div class="form-group">
-                                            <label>Sex</label> <span id="error5"></span>
+                                            <label>Tipo Piatto</label> <span id="error5"></span>
                                             <div class="radio">
                                                 <label>
                                                     <input type="radio" name="sex" id="optionsRadios1" value="Bianca" checked> CARNE BIANCA
@@ -198,7 +198,7 @@
 }
 else
 {	
-	session.setAttribute("ErrorIndex", "You must be logged in to access the administrator area."); %>
+	session.setAttribute("ErrorIndex", "You must be logged in to access the manager area."); %>
 	<script>
 		window.location.href = "login.jsp";
 	</script>

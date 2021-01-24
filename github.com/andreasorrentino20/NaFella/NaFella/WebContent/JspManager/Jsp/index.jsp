@@ -32,7 +32,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>NaFella Administrator</title>
+    <title>NaFella Manager</title>
 	
 	<%@ include file="../fragments/ico.html" %>
 	
