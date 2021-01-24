@@ -138,7 +138,8 @@ public class UploadFile extends HttpServlet {
 			}
 			catch(Exception ex)
 			{
-				request.setAttribute("message_danger", "File upload failed due to : " + ex);
+				request.setAttribute("message_danger", "File upload failed");  // errore fixato
+				//request.setAttribute("message_danger", "File upload failed due to : " + ex);
 			}
 		}
 		else

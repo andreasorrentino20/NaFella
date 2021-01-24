@@ -26,11 +26,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 	
-    <title>Customers Registered - Generate Shop Administrator</title>
+    <title>Customers Registered - NaFella Manager</title>
 	
 	<script>
 	  var pathname = window.location.pathname;
-	  if(pathname=="/GenerateShop/administrator/pages/customers_registered.jsp")
+	  if(pathname=="/NaFella/JspManager/Jsp/customers_registered.jsp")
 	  {
 			  window.location.href = "customers_registered"
 	  }							

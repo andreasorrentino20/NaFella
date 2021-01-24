@@ -34,13 +34,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Total Orders - Generate Shop Administrator</title>
+    <title>Total Orders - NaFella Manager</title>
 	
 	<%@ include file="../fragments/ico.html" %>
 	
 	<script>
 	  var pathname = window.location.pathname;
-	  if(pathname=="/NaFella/administrator/pages/total_orders.jsp")
+	  if(pathname=="/NaFella/JspManager/Jsp/total_orders.jsp")
 	  {
 			 window.location.href = "total_orders"
 	  }							

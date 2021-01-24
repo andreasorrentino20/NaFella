@@ -12,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Login Administrator</title>
+    <title>Login Manager</title>
 	
 	<%@ include file="../fragments/ico.html" %>
 	
