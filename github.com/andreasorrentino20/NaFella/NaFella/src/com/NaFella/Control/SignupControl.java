@@ -63,7 +63,7 @@ public class SignupControl extends HttpServlet {
 				    				      
 				    session.setAttribute("register_completed", email);				    
 				    
-					Customer bean = new Customer();
+					Customer bean = new Customer(0,null,null,null,null,null,null);
 					bean.setEmail(email);
 					bean.setFirstName(first_name);
 					bean.setLastName(last_name);

@@ -2,14 +2,14 @@ package com.NaFella.Model.Bean;
 
 public class Address {
 	
-	public Address() {
-		this.id = -1;
-		this.street = "";
-		this.postalCode = "";
-		this.city = "";
-		this.province = "";
-		this.country = "";
-		this.idCustomer = -1;
+	public Address(int id, String street, String postalCode, String city, String province, String country, int idCustomer) {
+		this.id = id;
+		this.street = street;
+		this.postalCode = postalCode;
+		this.city = city;
+		this.province = province;
+		this.country = country;
+		this.idCustomer = idCustomer;
 	}
 	
 	

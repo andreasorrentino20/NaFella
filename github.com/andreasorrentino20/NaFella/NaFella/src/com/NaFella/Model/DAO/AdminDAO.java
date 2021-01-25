@@ -70,7 +70,7 @@ public class AdminDAO {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 
-		Customer bean = new Customer();
+		Customer bean = new Customer(0,null,null,null,null,null,null);
 
 		String selectSQL = "select * from " + AdminDAO.TABLE_NAME + " where id = ?";
 
@@ -151,7 +151,7 @@ public class AdminDAO {
 			ResultSet rs = preparedStatement.executeQuery();
 
 			while (rs.next()) {
-				Customer bean = new Customer();
+				Customer bean = new Customer(0,null,null,null,null,null,null);
 
 				bean.setId(rs.getInt("id"));
 				bean.setEmail(rs.getString("email"));
@@ -175,7 +175,7 @@ public class AdminDAO {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 
-		Customer bean = new Customer();
+		Customer bean = new Customer(0,null,null,null,null,null,null);
 
 		String selectSQL = "SELECT * FROM " + AdminDAO.TABLE_NAME + " WHERE email = ? AND psw = ?";
 

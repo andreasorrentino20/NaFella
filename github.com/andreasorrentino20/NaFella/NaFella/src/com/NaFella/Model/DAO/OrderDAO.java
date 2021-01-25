@@ -74,7 +74,7 @@ private static DataSource ds;
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 
-		Order bean = new Order();
+		Order bean = new Order(0,null,null,null,0,0,0);
 
 		String selectSQL = "select * from " + OrderDAO.TABLE_NAME + " where id = ?";
 
@@ -173,10 +173,10 @@ private static DataSource ds;
 	public synchronized Order doRetrieveLastId() throws SQLException {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
-		Order order = new Order();
+		Order order = new Order(0,null,null,null,0,0,0);
 		String selectSQL = "select id from "+ OrderDAO.TABLE_NAME +" order by id desc limit 1";
 		
-		Order bean = new Order();
+		Order bean = new Order(0,null,null,null,0,0,0);
 		try {
 			connection = ds.getConnection();
 			preparedStatement = connection.prepareStatement(selectSQL);
@@ -197,7 +197,7 @@ private static DataSource ds;
 		if(bean.getId()!=-1) {
 			return bean;
 		}  else {
-			return new Order(0);
+			return new Order(0,null,null,null,0,0,0);
 		}
 	}
 		
@@ -244,7 +244,7 @@ private static DataSource ds;
 			ResultSet rs = preparedStatement.executeQuery();
 
 			while (rs.next()) {
-				Order bean = new Order();
+				Order bean = new Order(0,null,null,null,0,0,0);
 
 				bean.setId(rs.getInt("purchase.id"));
 				bean.setTracking(rs.getString("purchase.tracking_code"));

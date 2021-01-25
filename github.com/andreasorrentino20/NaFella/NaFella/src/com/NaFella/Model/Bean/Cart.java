@@ -17,11 +17,7 @@ public class Cart {
 		images.add(img);
 	}
 	
-	public void removeItem(Product product,String img) {
-		int i = products.indexOf(product);
-		products.remove(product);
-		images.remove(i);
-	}
+	
 	
 	public void removeItem(int i) {
 		products.remove(i);

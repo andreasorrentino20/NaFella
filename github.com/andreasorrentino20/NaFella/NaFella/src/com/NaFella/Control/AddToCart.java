@@ -57,25 +57,9 @@ public class AddToCart extends HttpServlet {
 					if(action.equals("add")) {
 						if(model.doRetrieveByKey(id).getAvailability() <= 0){
 						} else {
-							String sourceImg = request.getParameter("image");
-							//trova e carica immagine png nel server
-							String img = sourceImg.split(",")[1];
-							img = img.replace(' ', '+');
-							byte[] imageBytes;
-					        imageBytes = javax.xml.bind.DatatypeConverter.parseBase64Binary(img);
-					        ByteArrayInputStream bis = new ByteArrayInputStream(imageBytes);
-					        BufferedImage image = ImageIO.read(bis);
-					        int n = ReadFile.readFile();
-					        //String s = "C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/GenerateShop/prints/image"+n+".png";
-					        String s = "C:/Users/Luigi Cicalese/eclipse-workspace/NaFella/WebContent/prints/image"+n+".png";
-					        String save = "prints/image"+n+".png";
-					        File f = new File(s);
-					        f.createNewFile();
-					        ImageIO.write(image, "png", f);
-							n+=1;
-							ReadFile.writeFile(n);
-							cart.addItem(model.doRetrieveByKey(id), save);
-							//model.doUpdateByKey(id, "remove");
+
+							cart.addItem(model.doRetrieveByKey(id), "");
+							model.doUpdateByKey(id, "remove");
 						}
 					}
 				}
@@ -87,6 +71,12 @@ public class AddToCart extends HttpServlet {
 		request.getSession().setAttribute("cart", cart);
 		response.getWriter().write(""+cart.getProducts().size());
 	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+
+
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)

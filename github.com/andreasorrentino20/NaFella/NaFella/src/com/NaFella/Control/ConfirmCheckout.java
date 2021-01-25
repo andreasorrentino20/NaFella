@@ -57,7 +57,7 @@ public class ConfirmCheckout extends HttpServlet {
 			 Cart cart = (Cart)request.getSession().getAttribute("cart");
 			 if(cart!= null) {
 				 int addressId = Integer.parseInt(request.getParameter("address_id"));
-				 Order order = new Order();
+				 Order order = new Order(0,null,null,null,0,0,0);
 				 order.setCustomerId(customer.getId());
 				 order.setCustomerAddress(addressId);
 				 order.setPrice(Double.parseDouble(request.getParameter("total")));

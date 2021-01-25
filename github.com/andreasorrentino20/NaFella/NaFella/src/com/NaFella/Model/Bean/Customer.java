@@ -3,14 +3,13 @@ package com.NaFella.Model.Bean;
 public class Customer {
 	
 	
-	
-	public Customer() {
-		this.id = -1;
-		this.email = "";
-		this.firstName = "";
-		this.lastName = "";
-		this.birthdate = "";
-		this.phoneNumber = "";
+	public Customer(int id, String email, String firstName, String lastName, String birthdate, String phoneNumber,String psw) {
+		this.id = id;
+		this.email = email;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.birthdate = birthdate;
+		this.phoneNumber = phoneNumber;
 	}
 	
 	

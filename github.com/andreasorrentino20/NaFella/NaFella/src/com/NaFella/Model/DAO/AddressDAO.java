@@ -110,7 +110,7 @@ public class AddressDAO {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 		
-		Address bean = new Address();
+		Address bean = new Address(0,null,null,null,null,null,0);
 
 		String selectSQL = "select * from " + AddressDAO.TABLE_NAME + " where id = ?";
 
@@ -216,7 +216,7 @@ public class AddressDAO {
 			ResultSet rs = preparedStatement.executeQuery();
 
 			while (rs.next()) {
-				Address bean = new Address();
+				Address bean = new Address(0,null,null,null,null,null,0);
 
 				bean.setId(rs.getInt("id"));
 				bean.setStreet(rs.getString("street"));

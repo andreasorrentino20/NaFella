@@ -121,11 +121,10 @@ public class UploadFile extends HttpServlet {
 				
 				if (action.equalsIgnoreCase("insert_product")) {
 					
-					Product bean = new Product();
+					Product bean = new Product(0, null, null, null, null, null, 0, 0, 0);
 					bean.setName(product_name);;
 					bean.setSize(size);
 					bean.setImg(image);
-					bean.setSex(sex);
 					bean.setType(product_type);
 					bean.setDescription(description);
 					bean.setPrice(price);
@@ -175,7 +174,7 @@ public class UploadFile extends HttpServlet {
 	
 	private static String creaDir(String name_folder)
 	  {
-		String Dir = "C:/Users/Luigi Cicalese/eclipse-workspace/NaFella/WebContent/images/" + name_folder;
+		String Dir = "C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/NaFella/images/" + name_folder;
 		//String Dir = "C:/apache-tomcat-8.5.11/webapps/GenerateShop/images/" + name_folder;
 		
 	    new File(Dir).mkdir();

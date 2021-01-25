@@ -82,11 +82,10 @@ public class ProductControl extends HttpServlet {
 								
 								int id = Integer.parseInt(request.getParameter("id"));
 								
-								Product bean = new Product();
+								Product bean = new Product(0, null, null, null, null, null, 0, 0, 0);
 								bean.setName(product_name);;
 								bean.setSize(size);
 								bean.setImg(image);
-								bean.setSex(sex);
 								bean.setType(product_type);
 								bean.setDescription(description);
 								bean.setPrice(price);

@@ -102,7 +102,7 @@ public class SelectionDAO {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 
-		Order bean = new Order();
+		Order bean = new Order(0,null,null,null,0,0,0);
 
 		String selectSQL = "select * from " + SelectionDAO.TABLE_NAME + " where id = ?";
 
@@ -181,7 +181,7 @@ public class SelectionDAO {
 			ResultSet rs = preparedStatement.executeQuery();
 
 			while (rs.next()) {
-				Order bean = new Order();
+				Order bean = new Order(0,null,null,null,0,0,0);
 
 				bean.setId(rs.getInt("id"));
 				bean.setPaymentState(rs.getString("payment_state"));

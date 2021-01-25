@@ -3,23 +3,14 @@ package com.NaFella.Model.Bean;
 public class Order {
 	
 	
-	
-	public Order() {
-		this.id = -1;
-		this.date = "";
-		this.tracking = "";
-		this.paymentState = "";
-		this.customerAddress = -1;
-		this.customerId = -1;
-	}
-	
-	public Order(int id) {
+	public Order(int id, String date, String tracking,String paymentState,int customerAddress, int customerId, double price) {
 		this.id = id;
-		this.date = "";
-		this.tracking = "";
-		this.paymentState = "";
-		this.customerAddress = -1;
-		this.customerId = -1;
+		this.date = date ;
+		this.tracking = tracking;
+		this.paymentState = paymentState;
+		this.customerAddress = customerAddress;
+		this.customerId = customerId;
+		this.price = price;
 	}
 	
 	public int getId() {

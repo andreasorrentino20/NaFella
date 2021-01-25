@@ -61,7 +61,7 @@ public class AddressControl extends HttpServlet {
 							String province = request.getParameter("province");
 							String country = request.getParameter("country");
 											
-							Address bean = new Address();
+							Address bean = new Address(0,null,null,null,null,null,0);
 							bean.setStreet(street);
 							bean.setCity(city);
 							bean.setPostalCode(postalCode);
@@ -80,7 +80,7 @@ public class AddressControl extends HttpServlet {
 								
 								int id = Integer.parseInt(request.getParameter("id"));
 								
-								Address bean = new Address();
+								Address bean = new Address(0,null,null,null,null,null,0);
 								bean.setStreet(street);
 								bean.setCity(city);
 								bean.setPostalCode(postalCode);

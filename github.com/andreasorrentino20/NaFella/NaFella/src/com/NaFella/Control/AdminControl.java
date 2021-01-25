@@ -78,7 +78,7 @@ public class AdminControl extends HttpServlet {
 							String tracking_code = request.getParameter("tracking_code");
 							
 							int id_order = Integer.parseInt(request.getParameter("id_order"));
-							Order bean = new Order();
+							Order bean = new Order(0,null,null,null,0,0,0);
 							bean.setTracking(tracking_code);
 							bean.setId(id_order);
 							model_Order.doModify(bean);

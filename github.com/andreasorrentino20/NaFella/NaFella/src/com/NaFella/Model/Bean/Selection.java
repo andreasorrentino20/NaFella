@@ -7,12 +7,6 @@ public class Selection {
 	String image;
 	double realPrice;
 	
-	public Selection() {
-		productId = -1;
-		purchaseId = -1;
-		image = "";
-		realPrice = -1;
-	}
 	
 	public Selection(int productId, int purchaseId, String image, double realPrice) {
 		this.productId = productId;

@@ -85,7 +85,7 @@ function first_last_name_validation(name,error,stamp)
 {
 	var letters = /^[\sA-Za-z]+$/;
 	var name_len = name.value.length;
-	if(name_len > 0 && name_len < 65 )
+	if(name_len > 0 && name_len < 2 )
 	{	if(name.value.match(letters))
 		{
 			document.getElementById(error).innerHTML = "";
@@ -102,7 +102,7 @@ function first_last_name_validation(name,error,stamp)
 		if(name_len <= 0)
 			document.getElementById(error).innerHTML = "You have not insert the "+ stamp + ".";
 		else
-			if(name_len > 64)
+			if(name_len > 2)
 				document.getElementById(error).innerHTML = "The max "+ stamp + " is 64 characters.";
 		
 		return false;

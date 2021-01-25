@@ -33,10 +33,12 @@ import javax.sql.DataSource;
 
 class AddressDAOTest {
 
+	
 	AddressDAO addressDAO = new AddressDAO();
 //	Address address = new Address(5,"bo","1234","nocera","salerno","italia",3);
 	
 	private static DataSource ds = null;
+	
 	
 	@Test
 	void testDoSave() throws SQLException, NamingException {

@@ -3,16 +3,16 @@ package com.NaFella.Model.Bean;
 public class Product {
 
 	
-	public Product() {
-		this.id = -1;
-		this.name = "";
-		this.img = "";
-		this.type = "";
-		this.description = "";
-		this.size = "";
-		this.price = 0;
-		this.discount = 0;
-		this.availability = 0;
+	public Product(int id, String name, String img,String type, String description, String size,double price, double discount,int availability){
+		this.id = id;
+		this.name = name;
+		this.img = img;
+		this.type = type;
+		this.description = description;
+		this.size = size;
+		this.price = price;
+		this.discount = discount;
+		this.availability = availability;
 	}
 	
 	public int getId() {
@@ -70,51 +70,21 @@ public class Product {
 	public void setSize(String size) {
 		this.size = size;
 	}
-
-	public String getSex() {
-		return sex;
-	}
-
-	public void setSex(String sex) {
-		this.sex = sex;
-	}
-	
-	public double getReal_price() {
-		return real_price;
-	}
-
-	public void setReal_price(double real_price) {
-		this.real_price = real_price;
-	}
-	
-	public String getImageCanvas() {
-		return image_canvas;
-	}
-	
-	public void setImageCanvas(String image_canvas) {
-		this.image_canvas = image_canvas;
-	}
 	
 	public String toString() {
-		return "Product [id=" + id + ", name=" + name + ", img=" + img + ", type=" + type + ", sex=" + sex
-				+ ", category=" + category + ", description=" + description + ", size=" + size + ", color=" + color
-				+ ", price=" + price + ", real_price=" + real_price + ", discount=" + discount + ", availability="
-				+ availability + ", image_canvas=" + image_canvas + "]";
+		return "Product [id=" + id + ", name=" + name + ", img=" + img + ", type=" + type + ", description=" + description + ", size=" + size + ", price=" + price + ", discount=" + discount + ", availability="
+				+ availability + "]";
 	}
 
+//	Product [id="prod.getId()", name="prod.getName", img="prod.getImg", type="prod.getType", description="prod.getDescription", size="prod.getSize", price="prod.getPrice", discount="prod.getDiscount", availability="prod.getAvailability"]
 
 	private int id;
 	private String name;
 	private String img;
 	private String type;
-	private String sex;
-	private String category;
 	private String description;
 	private String size;
-	private String color;
 	private double price;
-	private double real_price;
 	private double discount;
 	private int availability;
-	private String image_canvas;
 }

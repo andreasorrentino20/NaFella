@@ -71,7 +71,7 @@ public class CustomerDAO {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 
-		Customer bean = new Customer();
+		Customer bean = new Customer(0,null,null,null,null,null,null);
 
 		String selectSQL = "select * from " + CustomerDAO.TABLE_NAME + " where id = ?";
 
@@ -153,7 +153,7 @@ public class CustomerDAO {
 			ResultSet rs = preparedStatement.executeQuery();
 
 			while (rs.next()) {
-				Customer bean = new Customer();
+				Customer bean = new Customer(0,null,null,null,null,null,null);
 
 				bean.setId(rs.getInt("id"));
 				bean.setEmail(rs.getString("email"));
@@ -179,7 +179,7 @@ public class CustomerDAO {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 
-		Customer bean = new Customer();
+		Customer bean = new Customer(0,null,null,null,null,null,null);
 
 		String selectSQL = "SELECT * FROM " + CustomerDAO.TABLE_NAME + " WHERE email = ? AND psw = ?";
 
