@@ -116,7 +116,7 @@
                                             <td><%=pr.getId()%> </td>
                                             <td><%=pr.getName()%></td>
                                             <td><%=pr.getSize()%></td>
-                                            <td><%=pr.getSex()%></td>
+                                            </td>
                                             <td><%=pr.getType()%></td>
                                             <td><%=pr.getPrice()%></td>
                                             <td><%=pr.getDiscount()%></td>
@@ -185,22 +185,7 @@
                                     </div>
                                     
    									<div class="form-group">
-                                            <label>Tipo Piatto</label> <span id="error5"></span>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="sex" id="optionsRadios1" value="Bianca" <%if(product.getSex().equalsIgnoreCase("Bianca")) {%> checked<%}%>> Male
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="sex" id="optionsRadios2" value="Rossa" <%if(product.getSex().equalsIgnoreCase("Rossa")) {%> checked<%}%>> Famale
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="sex" id="optionsRadios3" value="PiattiPronti" <%if(product.getSex().equalsIgnoreCase("PiattiPronti")) {%> checked<%}%>> Unisex
-                                                </label>
-                                            </div>
+                                            
                                      </div>
 								</div>
 								<!-- /.col-lg-6 (nested) -->

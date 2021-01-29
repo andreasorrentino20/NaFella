@@ -124,15 +124,15 @@
 						product_name = pr.getName();
 					%>		
 					    <div class="col-sm-4">
-					    <% if(pr.getSex().equalsIgnoreCase("Bianca"))
+					    <% if(pr.getDescription().equalsIgnoreCase("Bianca"))
 					   	   { %>
 						      	<div class="panel panel-primary">
 					    <% } %>
-					    <% if(pr.getSex().equalsIgnoreCase("Rossa"))
+					    <% if(pr.getDescription().equalsIgnoreCase("Rossa"))
 					   	   { %>
 					    	 	<div class="panel panel-danger">
 						<% } %>
-						<% if(pr.getSex().equalsIgnoreCase("Contorni"))
+						<% if(pr.getDescription().equalsIgnoreCase("Contorni"))
 					       { %>
 						     	<div class="panel panel-success">
 						<% } %>

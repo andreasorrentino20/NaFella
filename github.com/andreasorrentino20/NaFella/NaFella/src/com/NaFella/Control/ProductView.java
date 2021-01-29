@@ -33,7 +33,7 @@ public class ProductView extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Product pr = new Product(0, null, null, null, null, null, 0, 0, 0);
+		Product pr = new Product(0,null,null,null,null,null,0,0,0);
 		//System.out.println("sono qui");
 		try {
 			pr = model.doRetrieveByKey(Integer.parseInt(request.getParameter("id")));

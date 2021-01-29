@@ -13,13 +13,13 @@
 	
 	<title>Sign up</title>
 	
-	<%@ include file="Jsp/head.html" %>
+	<%@ include file="PresentationLayer/Jsp/head.html" %>
 	
 </head>
 
 <body>
 	
-	<%@ include file="Jsp/header.jsp" %>
+	<%@ include file="PresentationLayer/Jsp/header.jsp" %>
 	
 	<div class="container">
 	
@@ -96,7 +96,7 @@
 	<% }
 	%>
 	
-	<%@ include file="Jsp/footer.jsp" %>
+	<%@ include file="PresentationLayer/Jsp/footer.jsp" %>
 </body>
 </html>
 

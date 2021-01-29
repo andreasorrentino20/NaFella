@@ -10,7 +10,7 @@
 
   <title> Welcome to Home NaFella </title>
 
-  <%@ include file="Jsp/head.html" %>
+  <%@ include file="PresentationLayer/Jsp/head.html" %>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
   <script src="js/welcome.js"></script>
@@ -42,7 +42,7 @@
 <body>
 
 
-	<%@ include file="Jsp/header.jsp" %>
+	<%@ include file="PresentationLayer/Jsp/header.jsp" %>
 
 	  <div id="sketch_holder"></div>
 	  <div class="container">
@@ -54,7 +54,7 @@
 	    </div>
 	  </div>
 
-	<%@ include file="Jsp/footer.jsp" %>
+	<%@ include file="PresentationLayer/Jsp/footer.jsp" %>
 
 
 </body>

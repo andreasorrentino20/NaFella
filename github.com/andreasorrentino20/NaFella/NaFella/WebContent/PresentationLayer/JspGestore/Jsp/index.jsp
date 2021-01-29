@@ -229,10 +229,9 @@
 		                                	<td></td>
 		                                	<td><%=prd.getName()%></td>
 		                                 	<td><%=prd.getSize()%></td>
-		                                  	<td><%=prd.getSex()%></td>
+		                                  	
 		                                  	<td><%=prd.getType()%></td>
-		                                  	<td><%=prd.getReal_price()%></td>
-		                                  	<td><a href="../../<%=prd.getImageCanvas()%>" target="_blank"><%=prd.getImageCanvas()%></a></td>
+		                                  	
 		                                </tr>
 										                   					 		                
 								<%	} %>
