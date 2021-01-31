@@ -5,7 +5,7 @@
     pageEncoding="UTF-8" import="java.util.*, com.NaFella.Model.Bean.Cart, com.NaFella.Model.Bean.Customer, com.NaFella.Model.Bean.Product"%>
 
 <%
- 	
+ 
 	 Customer sessione_header = (Customer) request.getSession().getAttribute("customer");
 
 	 Cart cart = (Cart) request.getSession().getAttribute("cart");

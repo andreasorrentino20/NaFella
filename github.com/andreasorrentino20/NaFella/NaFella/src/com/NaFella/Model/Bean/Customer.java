@@ -3,15 +3,15 @@ package com.NaFella.Model.Bean;
 public class Customer {
 	
 	
-	public Customer(int id, String email, String firstName, String lastName, String birthdate, String phoneNumber,String psw) {
+	public Customer(int id, String email, String firstName, String lastName, String birthdate, String phoneNumber, String psw) {
 		this.id = id;
 		this.email = email;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.birthdate = birthdate;
 		this.phoneNumber = phoneNumber;
+		this.psw = psw;
 	}
-	
 	
 	public int getId() {
 		return id;

@@ -49,6 +49,7 @@ public class ProductDAO {
 			preparedStatement.setString(1, product.getName());
 			preparedStatement.setString(2, product.getSize());
 			preparedStatement.setString(3, product.getImg());
+			
 			preparedStatement.setString(5, product.getType());
 			preparedStatement.setString(6, product.getDescription());
 			preparedStatement.setDouble(7, product.getPrice());
@@ -74,7 +75,7 @@ public class ProductDAO {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 
-		Product bean = new Product(0, null, null, null, null, null, 0, 0, 0);
+		Product bean = new Product(0,null,null,null,null,null,0,0,0);
 
 		String selectSQL = "select * from " + ProductDAO.TABLE_NAME + " where id = ?";
 
@@ -91,6 +92,7 @@ public class ProductDAO {
 				bean.setName(rs.getString("product_name"));
 				bean.setSize(rs.getString("size"));
 				bean.setImg(rs.getString("image"));
+				
 				bean.setType(rs.getString("product_type"));
 				bean.setDescription(rs.getString("description"));
 				bean.setPrice(rs.getDouble("price"));
@@ -126,6 +128,7 @@ public class ProductDAO {
 			preparedStatement.setString(1, product.getName());
 			preparedStatement.setString(2, product.getSize());
 			preparedStatement.setString(3, product.getImg());
+			
 			preparedStatement.setString(5, product.getType());
 			preparedStatement.setString(6, product.getDescription());
 			preparedStatement.setDouble(7, product.getPrice());
@@ -239,12 +242,13 @@ public class ProductDAO {
 			while (rs.next()) {
 				
 				System.out.println("sono DOPO il while"); 
-				Product bean = new Product(0, null, null, null, null, null, 0, 0, 0);
+				Product bean = new Product(0,null,null,null,null,null,0,0,0);
 
 				bean.setId(rs.getInt("product.id"));
 				bean.setName(rs.getString("product_name"));
 				bean.setSize(rs.getString("size"));
 				bean.setImg(rs.getString("image"));
+				
 				bean.setType(rs.getString("product_type"));
 				bean.setDescription(rs.getString("description"));
 				bean.setPrice(rs.getDouble("price"));
@@ -308,14 +312,13 @@ public class ProductDAO {
 
 			while (rs.next()) {
 				
-				Product product_bean = new Product(0, null, null, null, null, null, 0, 0, 0);
+				Product product_bean = new Product(0,null,null,null,null,null,0,0,0);
 
 				product_bean.setName(rs.getString("product.product_name"));
 				product_bean.setSize(rs.getString("product.size"));
 				
 				product_bean.setType(rs.getString("product.product_type"));
 				
-		
 				products.add(product_bean);
 			}
 

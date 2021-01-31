@@ -2,14 +2,13 @@ package com.NaFella.Model.Bean;
 
 public class Order {
 	
-	
-	public Order(int id, String date, String tracking,String paymentState,int customerAddress, int customerId, double price) {
-		this.id = id;
-		this.date = date ;
-		this.tracking = tracking;
-		this.paymentState = paymentState;
-		this.customerAddress = customerAddress;
-		this.customerId = customerId;
+	public Order(int id, String date, String tracking, String paymentState, int customerAddress, int customerId, double price) {
+		this.id = -1;
+		this.date = "";
+		this.tracking = "";
+		this.paymentState = "";
+		this.customerAddress = -1;
+		this.customerId = -1;
 		this.price = price;
 	}
 	
