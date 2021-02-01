@@ -25,5 +25,18 @@
 	<classpathentry kind="lib" path="jaxb-api-2.3.0.jar"/>
 	<classpathentry kind="lib" path="jaxb-core-2.3.0.jar"/>
 	<classpathentry kind="lib" path="jaxb-impl-2.3.0.jar"/>
+	<classpathentry kind="lib" path="WebContent/mockito-all-2.0.2-beta (4).jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luigi Cicalese/Desktop/easymock-4.2-bundle (1)/easymock-4.2/easymock-4.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luigi Cicalese/Desktop/easymock-4.2-bundle (1)/easymock-4.2/easymock-4.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luigi Cicalese/Desktop/easymock-4.2-bundle (1)/easymock-4.2/easymock-4.2-samples.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luigi Cicalese/Desktop/easymock-4.2-bundle (1)/easymock-4.2/easymock-4.2-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luigi Cicalese/Desktop/easymock-4.2-bundle (1)/easymock-4.2/easymock-4.2-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luigi Cicalese/Desktop/easymock-4.2-bundle (1)/easymock-4.2/original-easymock-4.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luigi Cicalese/Desktop/easymock-4.2-bundle (1)/easymock-4.2/original-easymock-4.2-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luigi Cicalese/Desktop/jar_files (2)/spring-beans-5.3.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luigi Cicalese/Desktop/jar_files (2)/spring-core-5.3.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luigi Cicalese/Desktop/jar_files (2)/spring-jcl-5.3.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luigi Cicalese/Desktop/jar_files (2)/spring-jdbc-5.3.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luigi Cicalese/Desktop/jar_files (2)/spring-tx-5.3.3.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

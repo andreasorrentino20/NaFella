@@ -66,9 +66,7 @@ private static DataSource ds;
 		//this.doSaveSelection(order);
 	}
 	
-	public void doSaveSelection(Order order) {
-		//TODO
-	}
+	
 	
 	public synchronized Order doRetrieveByKey(int id) throws SQLException {
 		Connection connection = null;
@@ -208,7 +206,7 @@ private static DataSource ds;
 		PreparedStatement preparedStatement = null;
 
 		Collection<Order> orders = new LinkedList<Order>();
-		String selectSQL = null;		
+		String selectSQL = null;
 		
 		if(id_customer!=0)
 		{ 
